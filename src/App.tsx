@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 
-    let [alpha, setAlpha] = useState(1)
+    let [alpha, setAlpha] = useState(0)
 
     const onClickHandlerPlus = () => {
         setAlpha(++alpha)
@@ -15,12 +15,16 @@ function App() {
         console.log(alpha)
     }
 
+    const onClickHandlerReset = () => {
+        setAlpha(0)
+    }
+
     return (
         <div className="App">
             <h1>{alpha}</h1>
             <button onClick={onClickHandlerPlus}>NUMBER +</button>
             <button onClick={onClickHandlerMinus}>NUMBER -</button>
-            <button onClick={onClickHandlerMinus}>RESET</button>
+            <button onClick={onClickHandlerReset}>RESET</button>
         </div>
     );
 }
