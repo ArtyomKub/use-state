@@ -20,6 +20,7 @@ function App() {
             <h1>{alpha}</h1>
             <button onClick={onClickHandlerPlus}>NUMBER +</button>
             <button onClick={onClickHandlerMinus}>NUMBER -</button>
+            <button onClick={onClickHandlerMinus}>RESET</button>
         </div>
     );
 }
