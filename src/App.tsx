@@ -5,6 +5,7 @@ function App() {
 
     let alpha = 1
     const onClickHandler = () => {
+        ++alpha
         console.log(alpha)
     }
     return (
