@@ -1,17 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
 
-    let alpha = 1
+    let [alpha, setAlpha] = useState(1)
     const onClickHandler = () => {
-        ++alpha
+        setAlpha(++alpha)
         console.log(alpha)
     }
     return (
         <div className="App">
             <h1>{alpha}</h1>
-            <button onClick={onClickHandler}>NUMBER</button>
+            <button onClick={onClickHandler}>NUMBER +</button>
         </div>
     );
 }
